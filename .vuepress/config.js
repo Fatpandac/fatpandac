@@ -1,7 +1,7 @@
 const moment = require("moment");
 module.exports = {
     "title": "Fatpandac",
-    "description": "Coach, I want to learn this.",
+    "description": "Fatpandac's blog",
     "dest": "public",
     "theme": "reco",
     "locales": {
@@ -42,7 +42,7 @@ module.exports = {
                     {
                         "text": "Email",
                         "link": "mailto:fatpandaccc@gmail.com",
-                        "icon": "reco-email"
+                        "icon": "reco-mail"
                     }
                 ]
             }

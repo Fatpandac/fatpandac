@@ -147,6 +147,7 @@ module.exports = {
                     avatar: 'monsterid',
                     placeholder: '请输入内容...',
                     enableQQ: true,
+                    visitor: true,
                 }
             }
         ],

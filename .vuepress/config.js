@@ -149,6 +149,13 @@ module.exports = {
                     enableQQ: true,
                 }
             }
-        ]
+        ],
+        // sitemap
+        [
+            'sitemap',
+            {
+                hostname: 'https://fatpandac.com',
+            }
+        ],
     ],
 }

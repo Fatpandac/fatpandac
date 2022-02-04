@@ -19,6 +19,7 @@
         "@vuepress/plugin-last-updated": "^1.9.7",
         "moment": "^2.29.1",
         "vuepress-plugin-comment": "^0.7.3",
-        "vuepress-plugin-nuggets-style-copy": "^1.0.3"
+        "vuepress-plugin-nuggets-style-copy": "^1.0.3",
+        "vuepress-plugin-sitemap": "^2.3.1"
     }
 }

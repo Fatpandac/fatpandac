@@ -60,6 +60,12 @@ module.exports = {
             },
         },
         "friendLink": [
+            {
+                title: 'EpLiar',
+                desc: 'I don\'t know how to code',
+                logo: "https://avatars.githubusercontent.com/u/23559565?v=4",
+                link: 'https://epliar.com'
+            },
         ],
         "logo": "/logo.png",
         "search": true,

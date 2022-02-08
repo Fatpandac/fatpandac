@@ -164,5 +164,12 @@ module.exports = {
                 hostname: 'https://fatpandac.com',
             }
         ],
+        // progress
+        [
+            'reading-progress',
+            {
+                readingDir: ['/docs/']
+            }
+        ],
     ],
 }

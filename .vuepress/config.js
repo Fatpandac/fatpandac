@@ -171,5 +171,10 @@ module.exports = {
                 readingDir: ['/docs/']
             }
         ],
+        // code copy
+        [
+            'vuepress-plugin-code-copy',
+            true
+        ]
     ],
 }

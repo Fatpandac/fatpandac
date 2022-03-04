@@ -41,7 +41,7 @@ module.exports = {
                     },
                     {
                         "text": "Email",
-                        "link": "mailto:fatpandaccc@gmail.com",
+                        "link": "mailto:i@fatpandac.com",
                         "icon": "reco-mail"
                     }
                 ]

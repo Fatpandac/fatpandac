@@ -1,5 +1,5 @@
 ---
-title: 屏蔽 React 仓库上发表不正当言论者
+title: 屏蔽一些不友好的人
 date: 2022-03-04
 tags:
  - GitHub

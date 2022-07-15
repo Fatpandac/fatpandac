@@ -6,11 +6,20 @@ module.exports = {
     "theme": "reco",
     "locales": {
         "/": {
-          lang: "zh-CN",
+            lang: "zh-CN",
         },
     },
     "head": [
-    ['link', { rel: 'icon', href: '/favicon.png' }]
+        ['link', { rel: 'icon', href: '/favicon.png' }],
+        ['script', {}, `
+            var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?d47c012aa2838250165b44d65f898c3b";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+            })();
+        `],
     ],
     "themeConfig": {
         "noFoundPageByTencent": false,
@@ -30,14 +39,14 @@ module.exports = {
                 "icon": "reco-message",
                 "items": [
                     {
-                    "text": "GitHub",
-                    "link": "https://github.com/Fatpandac",
-                    "icon": "reco-github"
+                        "text": "GitHub",
+                        "link": "https://github.com/Fatpandac",
+                        "icon": "reco-github"
                     },
                     {
-                    "text": "Twitter",
-                    "link": "https://twitter.com/Fatpandac",
-                    "icon": "reco-twitter"
+                        "text": "Twitter",
+                        "link": "https://twitter.com/Fatpandac",
+                        "icon": "reco-twitter"
                     },
                     {
                         "text": "Email",
@@ -85,8 +94,8 @@ module.exports = {
             "@vuepress/last-updated",
             {
                 transformer: (timestamp, lang) => {
-                  moment.locale(lang);
-                  return moment(timestamp).format("YYYY-MM-DD HH:mm:ss");
+                    moment.locale(lang);
+                    return moment(timestamp).format("YYYY-MM-DD HH:mm:ss");
                 },
             },
         ],
@@ -130,13 +139,13 @@ module.exports = {
             {
                 copyText: "复制代码",
                 tip: {
-                  content: "复制成功!",
+                    content: "复制成功!",
                 },
             },
         ],
         // 拼音链接
         [
-            'permalink-pinyin', 
+            'permalink-pinyin',
             {
                 lowercase: true, // Converted into lowercase, default: true
                 separator: '-' // Separator of the slug, default: '-'

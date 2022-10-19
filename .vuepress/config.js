@@ -1,4 +1,5 @@
 const moment = require("moment");
+
 module.exports = {
     "title": "Fatpandac",
     "description": "Fatpandac's blog",
@@ -20,6 +21,24 @@ module.exports = {
             s.parentNode.insertBefore(hm, s);
             })();
         `],
+        [
+            "script",
+            {
+                async: "",
+                src: "https://www.googletagmanager.com/gtag/js?id=G-10D6YDNQ9J",
+            },
+        ],
+        [
+            "script",
+            {},
+            `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-10D6YDNQ9J');
+            `,
+        ]
     ],
     "themeConfig": {
         "noFoundPageByTencent": false,
@@ -184,6 +203,6 @@ module.exports = {
         [
             'vuepress-plugin-code-copy',
             true
-        ]
+        ],
     ],
 }

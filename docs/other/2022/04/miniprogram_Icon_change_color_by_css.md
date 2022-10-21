@@ -30,7 +30,7 @@ categories:
 
 1. 进入 [https://icomoon.io](https://icomoon.io) 点击下图所指处
 
-   ![image-20220413012356493](https://s2.loli.net/2022/04/13/EBKNw3ilDahuTX5.png)
+   ![image-20220413012356493](/EBKNw3ilDahuTX5.png)
 
 2. 按步骤如下
 
@@ -38,23 +38,23 @@ categories:
    - 点击 2 箭头所指处选择需要生成的 Icon
    - 点击 3 箭头所指处生成对应的文件
 
-   ![image-20220413012712640](https://s2.loli.net/2022/04/13/ZSTq2JGlHDnO9Rk.png)
+   ![image-20220413012712640](/ZSTq2JGlHDnO9Rk.png)
 
 3. 对 Icon 命名后点击右下角的 Download 
 
-   ![image-20220413012905720](https://s2.loli.net/2022/04/13/JZkbDuhxKTtAUsH.png)
+   ![image-20220413012905720](/JZkbDuhxKTtAUsH.png)
 
 4. 之后将下载的压缩包进行解压得到如下文件内容
 
-   ![image-20220413013107181](https://s2.loli.net/2022/04/13/9nT8bgUSKj5frkN.png)
+   ![image-20220413013107181](/9nT8bgUSKj5frkN.png)
 
 5. 转码 base64，打开 [https://transfonter.org](https://transfonter.org) 点击 `Add fonts` 将上一步骤解压的文件夹中 `fonts` 文件夹下的 `icomon.ttf` 文件夹导入
 
-   ![image-20220413013508624](https://s2.loli.net/2022/04/13/hLVx4XrKvSk7mRc.png)
+   ![image-20220413013508624](/hLVx4XrKvSk7mRc.png)
 
 6. 进行如下配置后即可点击 `Convert`，之后再点击 `Download` 下载，即可完成转码
 
-   ![image-20220413013637050](https://s2.loli.net/2022/04/13/yUMBw8bWv9IHTKq.png)
+   ![image-20220413013637050](/yUMBw8bWv9IHTKq.png)
 
 7. 将上一步骤下载的文件夹解压，之后把解压后的文件夹中的 stylesheet.css 粘贴到 app.wxss  中，再把第四步解压的文件中的 style.css 里从 `[class^="icon-"], [class*=" icon-"] {` 开始的内容也粘贴到 app.wxss 中
 

@@ -8,7 +8,7 @@ categories:
  - 技文
 ---
 
-![DocSearch](https://files.raycast.com/e0zv47mp4s38ocgf56uqp6rsd1cn)
+![DocSearch](/extension-og.png)
 
 事情的起因是在回复 DIYgod 的一条推文之后……
 
@@ -18,7 +18,7 @@ categories:
 
 一直拖延到现在最终总算是完成了，可以接入大多数支持 DocSearch 的文档网站。
 
-![DocSearch Raycast's extension interface](https://s2.loli.net/2022/08/03/AbPWJgKTtSl8aR1.png)
+![DocSearch Raycast's extension interface](/AbPWJgKTtSl8aR1.png)
 
 目前支持了大部分的前端文档网站。  
 欢迎使用同时也欢迎提交更多的文档网站🙏。

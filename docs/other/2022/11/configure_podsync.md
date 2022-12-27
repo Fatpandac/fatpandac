@@ -3,9 +3,7 @@ title: 配置 Podsync 并修复 bug “failed to execute youtube-dl signal kille
 date: 2022-10-23
 tags:
  - Podsync
- - YouTube
- - RSS
- - Podcast
+ - Youtube
 categories:
  - 技文
 ---
@@ -16,7 +14,7 @@ categories:
 
 于是搜索了一下找到了一个叫做 Podsync 的程序，这个程序可以实现我的想法，将一个 YouTube 频道转变为一个可以订阅且根据 YouTube 频道更新一起更新的播客。
 
-[![Podsync Logo](/podsync_logo.png)](https://github.com/mxpv/podsync)
+[![Podsync Logo](/images/podsync_logo.png)](https://github.com/mxpv/podsync)
 
 翻阅了 Readme 之后开始了安装配置，我一开始选择了使用 Docker 的安装方式因为这个安装方式不需要安装配置其他环境，在拉取下来镜像之后开始创建容器，但是在创建容器之前还得做准备工作创建一个配置文件，创建一个 toml 文件，其内容如下：
 
@@ -74,8 +72,8 @@ docker run \
 
 在 Podsync 的源代码中搜索了一会后发现了[下载器相关的代码](https://github.com/mxpv/podsync/blob/main/pkg/ytdl/ytdl.go?rgh-link-date=2022-10-24T13%3A14%3A35Z#L61)，我将代码中对应的内容替换为 yt-dlp 如下：
 
-![Diff code](/Eg9dnTcE7SVw.png)
+![Diff code](/images/Eg9dnTcE7SVw.png)
 
 之后再次运行，总算是可以正常运行了！成功生成了下列内容包括订阅文件 xml！
 
-![Genarate files](/4kwzerTX3SzN.png)
+![Genarate files](/images/4kwzerTX3SzN.png)

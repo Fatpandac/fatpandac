@@ -76,6 +76,11 @@ module.exports = {
                         "text": "Email",
                         "link": "mailto:i@fatpandac.com",
                         "icon": "reco-mail"
+                    },
+                    {
+                        "text": "Telegram",
+                        "link": "https://t.me/fatpandac",
+                        "icon": "reco-telegram"
                     }
                 ]
             }
@@ -173,21 +178,6 @@ module.exports = {
             {
                 lowercase: true, // Converted into lowercase, default: true
                 separator: '-' // Separator of the slug, default: '-'
-            }
-        ],
-        // 评论
-        [
-            '@vuepress-reco/comments',
-            {
-                solution: 'valine',
-                options: {
-                    appId: 'OxeWoeP8Lx2qvTiCxJWATBYI-gzGzoHsz',
-                    appKey: 'dP2Jzs4j04wb9MibrIpcwm5d',
-                    avatar: 'monsterid',
-                    placeholder: '请输入内容...',
-                    enableQQ: true,
-                    visitor: true,
-                }
             }
         ],
         // sitemap

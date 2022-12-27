@@ -3,12 +3,11 @@ title: 一个 Raycast 插件的诞生
 date: 2022-08-02
 tags:
  - Raycast
- - DocSearch
 categories:
  - 技文
 ---
 
-![DocSearch](/extension-og.png)
+![DocSearch](/images/extension-og.png)
 
 事情的起因是在回复 DIYgod 的一条推文之后……
 
@@ -18,7 +17,7 @@ categories:
 
 一直拖延到现在最终总算是完成了，可以接入大多数支持 DocSearch 的文档网站。
 
-![DocSearch Raycast's extension interface](/AbPWJgKTtSl8aR1.png)
+![DocSearch Raycast's extension interface](/images/AbPWJgKTtSl8aR1.png)
 
 目前支持了大部分的前端文档网站。  
 欢迎使用同时也欢迎提交更多的文档网站🙏。

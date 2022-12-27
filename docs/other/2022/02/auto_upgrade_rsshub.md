@@ -52,11 +52,11 @@ categories:
 
 2. 设置对应仓库的 webhook
 进入到你需要设置的仓库设置页面即可看到一个 Webhooks 的选项，进入后点击 `Add webhook`，即可看到如下界面：  
-![Add webhook 界面](/gaVNfQHMXT426Ob.png)
+![Add webhook 界面](/images/gaVNfQHMXT426Ob.png)
 `Playload URL` 填入你刚刚设置的 API 路由地址  
 `Content type` 根据你的需求填写，我这里就选择 json
 其他选项按需选择即可，之后点击绿色的 `Add webhook` 即可，第一次添加会向 API 地址发送请求的。  
 :::tip 如何测试
 如果后续需要对自动化进行测试，可以点击到对应的 webhook 页面找到下面这个内容，点击 `Redeliver` 即可。
-![Deliveries 界面](/I9tTfKNjv2usEWZ.png)
+![Deliveries 界面](/images/I9tTfKNjv2usEWZ.png)
 :::

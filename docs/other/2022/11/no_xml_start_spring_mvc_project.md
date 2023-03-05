@@ -1,6 +1,6 @@
 ---
 title: 不使用 XML  配置 Spring MVC 项目
-date: 2022-11.10
+date: 2022-11-10
 tags:
  - Spring
  - XML

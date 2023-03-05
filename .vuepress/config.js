@@ -76,11 +76,6 @@ module.exports = {
                         "text": "Email",
                         "link": "mailto:i@fatpandac.com",
                         "icon": "reco-mail"
-                    },
-                    {
-                        "text": "Telegram",
-                        "link": "https://t.me/fatpandac",
-                        "icon": "reco-telegram"
                     }
                 ]
             }
@@ -137,40 +132,6 @@ module.exports = {
                     margin: 16
                 }
             }
-        ],
-        // 音乐播放器
-        [
-            "meting",
-            {
-                meting: {
-                    server: "netease",
-                    type: "playlist",
-                    mid: "7273467940",
-                },
-                aplayer: {
-                    fixed: true,
-                    mini: true,
-                    autoplay: true,
-                    listFolded: true,
-                    theme: "#f9bcdd",
-                    order: "random",
-                    volume: 0.3,
-                    lrcType: 0,
-                },
-                mobile: {
-                    cover: false,
-                },
-            },
-        ],
-        // 代码复制
-        [
-            "vuepress-plugin-nuggets-style-copy",
-            {
-                copyText: "复制代码",
-                tip: {
-                    content: "复制成功!",
-                },
-            },
         ],
         // 拼音链接
         [

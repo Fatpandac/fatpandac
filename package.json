@@ -1,26 +1,23 @@
 {
-    "name": "MyBlog",
+    "name": "my_blog",
     "version": "1.0.0",
     "author": "Fatpandac",
     "scripts": {
         "dev": "vuepress dev . ",
         "build": "vuepress build ."
     },
-    "homepage": "https://github.com/anick-xs/blog",
+    "description": "My blog",
     "devDependencies": {
         "@vuepress/plugin-medium-zoom": "^1.9.7",
-        "vuepress": "1.8.2",
+        "vuepress": "^1.9.9",
         "vuepress-plugin-code-copy": "^1.0.6",
-        "vuepress-plugin-meting": "^0.3.1",
         "vuepress-plugin-permalink-pinyin": "^1.0.0",
-        "vuepress-theme-reco": "1.6.10"
+        "vuepress-theme-reco": "^1.6.17"
     },
-    "description": "My blog",
     "dependencies": {
         "@vuepress/plugin-last-updated": "^1.9.7",
         "moment": "^2.29.1",
         "vuepress-plugin-comment": "^0.7.3",
-        "vuepress-plugin-nuggets-style-copy": "^1.0.3",
         "vuepress-plugin-reading-progress": "^1.0.10",
         "vuepress-plugin-sitemap": "^2.3.1"
     }

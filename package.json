@@ -4,7 +4,8 @@
     "author": "Fatpandac",
     "scripts": {
         "dev": "vuepress dev . ",
-        "build": "vuepress build ."
+        "build": "vuepress build .",
+        "deploy": "vuepress build . && cd ./public && deployctl deploy --project fatpandac-blog --prod https://deno.land/std@0.140.0/http/file_server.ts && cd .. && rm -rf ./public"
     },
     "description": "My blog",
     "devDependencies": {

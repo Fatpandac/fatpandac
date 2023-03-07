@@ -1,4 +1,5 @@
 const moment = require("moment");
+
 module.exports = {
     "title": "Fatpandac",
     "description": "Fatpandac's blog",
@@ -20,6 +21,24 @@ module.exports = {
             s.parentNode.insertBefore(hm, s);
             })();
         `],
+        [
+            "script",
+            {
+                async: "",
+                src: "https://www.googletagmanager.com/gtag/js?id=G-10D6YDNQ9J",
+            },
+        ],
+        [
+            "script",
+            {},
+            `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-10D6YDNQ9J');
+            `,
+        ]
     ],
     "themeConfig": {
         "noFoundPageByTencent": false,
@@ -30,12 +49,17 @@ module.exports = {
                 "icon": "reco-home"
             },
             {
-                "text": "TimeLine",
+                "text": "时间线",
                 "link": "/timeline/",
                 "icon": "reco-date"
             },
             {
-                "text": "Contact",
+                "text": "订阅",
+                "link": "https://t.me/fatpandac_space",
+                "icon": "reco-bokeyuan"
+            },
+            {
+                "text": "联系",
                 "icon": "reco-message",
                 "items": [
                     {
@@ -109,61 +133,12 @@ module.exports = {
                 }
             }
         ],
-        // 音乐播放器
-        [
-            "meting",
-            {
-                meting: {
-                    server: "netease",
-                    type: "playlist",
-                    mid: "7273467940",
-                },
-                aplayer: {
-                    fixed: true,
-                    mini: true,
-                    autoplay: true,
-                    listFolded: true,
-                    theme: "#f9bcdd",
-                    order: "random",
-                    volume: 0.3,
-                    lrcType: 0,
-                },
-                mobile: {
-                    cover: false,
-                },
-            },
-        ],
-        // 代码复制
-        [
-            "vuepress-plugin-nuggets-style-copy",
-            {
-                copyText: "复制代码",
-                tip: {
-                    content: "复制成功!",
-                },
-            },
-        ],
         // 拼音链接
         [
             'permalink-pinyin',
             {
                 lowercase: true, // Converted into lowercase, default: true
                 separator: '-' // Separator of the slug, default: '-'
-            }
-        ],
-        // 评论
-        [
-            '@vuepress-reco/comments',
-            {
-                solution: 'valine',
-                options: {
-                    appId: 'OxeWoeP8Lx2qvTiCxJWATBYI-gzGzoHsz',
-                    appKey: 'dP2Jzs4j04wb9MibrIpcwm5d',
-                    avatar: 'monsterid',
-                    placeholder: '请输入内容...',
-                    enableQQ: true,
-                    visitor: true,
-                }
             }
         ],
         // sitemap
@@ -184,6 +159,6 @@ module.exports = {
         [
             'vuepress-plugin-code-copy',
             true
-        ]
+        ],
     ],
 }

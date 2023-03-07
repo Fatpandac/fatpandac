@@ -10,7 +10,7 @@ categories:
 ---
 
 再使用 brew 安装的 Python3 的时候使用 pip3 安装库的时候总是看到下面👇🏻烦人的警🛑  
-![pip3 在 brew 上烦人的警告](https://s2.loli.net/2022/03/13/kupj1b65xzZSh2q.png)
+![pip3 在 brew 上烦人的警告](/images/kupj1b65xzZSh2q.png)
 
 <!-- more -->
 
@@ -41,6 +41,6 @@ fish_add_path /opt/homebrew/opt/python@3.10/bin
 ```
 完成上述操作即可实现 brew 默认 python 版本的切换🔄了！
 尝试一下安装⬇️  `rich`
-![切换到 python3.10 后，pip 安装 rich](https://s2.loli.net/2022/03/13/ZPWnmdzQj1qU72c.png)
+![切换到 python3.10 后，pip 安装 rich](/images/ZPWnmdzQj1qU72c.png)
 很好👍🏻没有任何警🛑   
 

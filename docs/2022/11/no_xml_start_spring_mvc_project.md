@@ -2,12 +2,13 @@
 title: 不使用 XML  配置 Spring MVC 项目
 date: 2022-11-10
 tags:
- - Spring
- - XML
- - Java
+  - Spring
+  - XML
+  - Java
 categories:
- - 技文
+  - 技文
 ---
+
 这个学期开始学习 Spring 框架，在学习 Spring MVC 项目的时候我一开始是使用的 Spring Boot 但是后来老师说不能用这个，因为学的不是这个要是在期末考试的时候使用这个的话不会给分，于是我只能转回最原始的状态。
 
 <!-- more -->
@@ -146,10 +147,10 @@ public class WebConfig implements WebMvcConfigurer {
 
 ### Step 6: 编写对应的页面
 
-在 `web` 文件夹下面创建 `/WEB-INF/jsp/index.jsp` 文件，内容如下 
+在 `web` 文件夹下面创建 `/WEB-INF/jsp/index.jsp` 文件，内容如下
 
 ```html
-<H1>Hello World</H1>
+<h1>Hello World</h1>
 ```
 
 ### Step 7: 配置 Tomcat

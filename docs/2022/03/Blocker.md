@@ -2,19 +2,19 @@
 title: 屏蔽一些不友好的人
 date: 2022-03-04
 tags:
- - GitHub
- - React
+  - GitHub
+  - React
 categories:
- - 杂文
+  - 杂文
 ---
 
-今天在 React 的 GitHub 仓库的 issues 上看到了很多人发表了很多不正当言论的 issues，很是无语💬，屎💩都喷到国外去了……
+今天在 React 的 GitHub 仓库的 issues 上看到了很多人发表了很多不正当言论的 issues，很是无语 💬，屎 💩 都喷到国外去了……
 
-***于是决定写✍🏻️一个脚本来屏蔽掉这些人***
+**_于是决定写 ✍🏻️ 一个脚本来屏蔽掉这些人_**
 
 <!-- more -->
 
-感谢 [@sxzz](https://github.com/sxzz) 提供的[数据](https://raw.githubusercontent.com/sxzz/github-block-tool/main/analyze.json)，于是就有了下面的脚本👇🏻
+感谢 [@sxzz](https://github.com/sxzz) 提供的[数据](https://raw.githubusercontent.com/sxzz/github-block-tool/main/analyze.json)，于是就有了下面的脚本 👇🏻
 
 ```Python
 import requests
@@ -47,6 +47,6 @@ if __name__ == '__main__':
     main()
 ```
 
-**最终屏蔽了以下账户，如有误杀劳烦您[请联系我](mailto:i@fatpandac.com?subject=被误杀)，先说声抱歉🙏🏻**
+**最终屏蔽了以下账户，如有误杀劳烦您[请联系我](mailto:i@fatpandac.com?subject=被误杀)，先说声抱歉 🙏🏻**
 
 [文件链接](https://gist.github.com/Fatpandac/61b82660e13b9f58d072938c93b3c947#file-blocker-txt)

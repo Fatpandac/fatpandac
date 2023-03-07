@@ -2,10 +2,10 @@
 title: 使用 Github Action 自动化发布 Release
 date: 2022-06-02
 tags:
- - GitHub
- - GitHub Action
+  - GitHub
+  - GitHub Action
 categories:
- - 技文
+  - 技文
 ---
 
 最近在维护一个自己的开源项目 [fuck_cqooc](https://github.com/Fatpandac/fuck_cqooc) 这是一个用于刷重庆高校在线平台的网课的工具，毕竟大家都知道的很多时候我们是没有这么多精力去看这些网课的，还有就是一般这些网课也是为了完成任务而任务的，基本上来说水平就是那样和念 PPT 没有多大区别，在这上面花费时间看起来并不是那么的合理的。
@@ -33,7 +33,7 @@ name: Release fuckcqooc
 on:
   push:
     tags:
-      - '**'
+      - "**"
   workflow_dispatch:
 
 jobs:
@@ -95,7 +95,7 @@ jobs:
           python-version: 3.7
       - name: install pyinstaller
         run: |
-          pip3 install pyinstaller 
+          pip3 install pyinstaller
       - name: setup env
         run: |
           pip3 install -r requirements.txt

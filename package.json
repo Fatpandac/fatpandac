@@ -5,7 +5,7 @@
     "scripts": {
         "dev": "vuepress dev . ",
         "build": "vuepress build .",
-        "deploy": "vuepress build . && cd ./public && deployctl deploy --project fatpandac-blog --prod https://deno.land/std@0.140.0/http/file_server.ts && cd .. && rm -rf ./public"
+        "prettier": "prettier --write ./docs/**/**/*.md ./.vuepress/**.js"
     },
     "description": "My blog",
     "devDependencies": {
@@ -13,7 +13,8 @@
         "vuepress": "^1.9.9",
         "vuepress-plugin-code-copy": "^1.0.6",
         "vuepress-plugin-permalink-pinyin": "^1.0.0",
-        "vuepress-theme-reco": "^1.6.17"
+        "vuepress-theme-reco": "^1.6.17",
+        "yorkie": "^2.0.0"
     },
     "dependencies": {
         "@vuepress/plugin-last-updated": "^1.9.7",
@@ -21,5 +22,8 @@
         "vuepress-plugin-comment": "^0.7.3",
         "vuepress-plugin-reading-progress": "^1.0.10",
         "vuepress-plugin-sitemap": "^2.3.1"
+    },
+    "gitHooks": {
+        "pre-commit": "npm run prettier"
     }
 }

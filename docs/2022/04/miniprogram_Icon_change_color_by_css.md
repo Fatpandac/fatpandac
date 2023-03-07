@@ -2,18 +2,18 @@
 title: 微信小程序开发使用 CSS 更换 SVG 颜色
 date: 2022-04-13
 tags:
- - CSS
- - Icon
- - 小程序
+  - CSS
+  - Icon
+  - 小程序
 categories:
- - 技文
+  - 技文
 ---
 
-最近在折腾微信小程序，写✍🏻️一个关于个人图书管理的小程序应用。
+最近在折腾微信小程序，写 ✍🏻️ 一个关于个人图书管理的小程序应用。
 
 在二十一世纪的今天几乎所有的应用都是有 Icon 的，Icon 的存在降低了用户的学习成本以及操作的速度，在很多时候我们人类对于文字的阅读能力相较于图像来说时*略差*的，所以应用程序的操作按钮基本都会附带上一个具有近似表达的 Icon，固然在小程序的开发中也得用上 Icon。
 
-从2019年10月开始苹果正实的在 iOS13 中加入了深色模式「Dark Mode」，这也标志这手机系统拥有深色模式将是一个大趋势。
+从 2019 年 10 月开始苹果正实的在 iOS13 中加入了深色模式「Dark Mode」，这也标志这手机系统拥有深色模式将是一个大趋势。
 
 深色模式的加入使得我们在开发一个应用程序的时候需要考虑到应用的深色模式下的适配，这样我们才能开发出比较好的产品，所以在我的这个小程序中我尝试了适配深色模式，但是遇到了一个问题，那就是 Icon 的颜色变化，如果我们不需要对深色模式进行适配的话，我们仅需要单一颜色的 Icon 就可以解决了，但是适配深色模式我们就需要对 Icon 进行相应的颜色调整。
 
@@ -41,7 +41,7 @@ categories:
 
    ![image-20220413012712640](/images/ZSTq2JGlHDnO9Rk.png)
 
-3. 对 Icon 命名后点击右下角的 Download 
+3. 对 Icon 命名后点击右下角的 Download
 
    ![image-20220413012905720](/images/JZkbDuhxKTtAUsH.png)
 
@@ -57,13 +57,12 @@ categories:
 
    ![image-20220413013637050](/images/yUMBw8bWv9IHTKq.png)
 
-7. 将上一步骤下载的文件夹解压，之后把解压后的文件夹中的 stylesheet.css 粘贴到 app.wxss  中，再把第四步解压的文件中的 style.css 里从 `[class^="icon-"], [class*=" icon-"] {` 开始的内容也粘贴到 app.wxss 中
+7. 将上一步骤下载的文件夹解压，之后把解压后的文件夹中的 stylesheet.css 粘贴到 app.wxss 中，再把第四步解压的文件中的 style.css 里从 `[class^="icon-"], [class*=" icon-"] {` 开始的内容也粘贴到 app.wxss 中
 
 8. 之后在微信小程序中如下引用对应的 `class` ，使用 `color` 属性即可进行颜色的修改即可,**注意**这时候 Icon 是以文字的形式引用进来的，所以要调整图标的大小时候应该使用的是 `font-size` 属性进行调整，示例如下：
 
    ```html
-   // wxml结构文件:
-     <view class="icon-add"></view>
+   // wxml结构文件: <view class="icon-add"></view>
    ```
 
    ```css
@@ -80,7 +79,7 @@ categories:
 
 ```css
 .icon-add:before {
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -93,4 +92,3 @@ categories:
   content: "\e900";
 }
 ```
-

@@ -2,10 +2,10 @@
 title: 配置 Podsync 并修复 bug “failed to execute youtube-dl signal killed”
 date: 2022-10-23
 tags:
- - Podsync
- - Youtube
+  - Podsync
+  - Youtube
 categories:
- - 技文
+  - 技文
 ---
 
 在使用 YouTube 的时候会订阅一些频道，有些频道的视频是那种可以完全不用看只要听就可以的，在之前我有开通会员来使用后台播放的功能，但是对于我来说会员的使用率还是太低了，我基本上一天也就会看一个节目而已，所以我在上次到期之后就没有续费了，但是我还是想要看那些节目但是又不想挂着让手机一直亮屏浪费多余的电（不环保 🐶），于是我就想是不是可以将一个视频提取出来他的音频然后生成一个播客的订阅源，这样我就可以在后台收听这些内容了。
@@ -42,7 +42,7 @@ categories:
 
 `[server]` 下面有 `port` 和 `data_dir` 两个内容，这两个分别是出口端口和下载的视频内容存放文件夹路径，`hostname` 则是设置自己的域名如果不设置这个域名将不能正确的访问到对应的音频源，也就无法正常使用播客订阅
 
-`[token]` 是 YouTube 的 API token 可以通过下面这个方法来申请取得 
+`[token]` 是 YouTube 的 API token 可以通过下面这个方法来申请取得
 
 [https://github.com/mxpv/podsync/blob/main/docs/how_to_get_vimeo_token.md](https://github.com/mxpv/podsync/blob/main/docs/how_to_get_vimeo_token.md)
 

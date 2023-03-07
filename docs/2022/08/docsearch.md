@@ -2,9 +2,9 @@
 title: 一个 Raycast 插件的诞生
 date: 2022-08-02
 tags:
- - Raycast
+  - Raycast
 categories:
- - 技文
+  - 技文
 ---
 
 ![DocSearch](/images/extension-og.png)
@@ -20,7 +20,7 @@ categories:
 ![DocSearch Raycast's extension interface](/images/AbPWJgKTtSl8aR1.png)
 
 目前支持了大部分的前端文档网站。  
-欢迎使用同时也欢迎提交更多的文档网站🙏。
+欢迎使用同时也欢迎提交更多的文档网站 🙏。
 
 <a title="Install DocSearch Raycast Extension" href="https://www.raycast.com/Fatpandac/docsearch#install">
   <img height="64" style="height: 64px" src="https://assets.raycast.com/Fatpandac/docsearch/install_button@2x.png">

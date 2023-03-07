@@ -9,9 +9,10 @@
     },
     "description": "My blog",
     "devDependencies": {
-        "@vuepress/plugin-medium-zoom": "^1.9.7",
         "vuepress": "^1.9.9",
+        "vuepress-plugin-clean-urls": "^1.1.2",
         "vuepress-plugin-code-copy": "^1.0.6",
+        "vuepress-plugin-medium-zoom": "^1.1.9",
         "vuepress-plugin-permalink-pinyin": "^1.0.0",
         "vuepress-theme-reco": "^1.6.17",
         "yorkie": "^2.0.0"

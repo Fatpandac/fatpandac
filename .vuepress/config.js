@@ -113,11 +113,7 @@ module.exports = {
     startYear: "2022",
     favicon: "/favicon.png",
   },
-  markdown: {
-    lineNumbers: true,
-  },
   plugins: [
-    // 文章最后更新时间转换
     [
       "@vuepress/last-updated",
       {
@@ -127,17 +123,6 @@ module.exports = {
         },
       },
     ],
-    // 图片缩放
-    [
-      "@vuepress/medium-zoom",
-      {
-        selector: "img.zoom-custom-imgs",
-        options: {
-          margin: 16,
-        },
-      },
-    ],
-    // 拼音链接
     [
       "permalink-pinyin",
       {
@@ -145,21 +130,38 @@ module.exports = {
         separator: "-", // Separator of the slug, default: '-'
       },
     ],
-    // sitemap
     [
       "sitemap",
       {
         hostname: "https://fatpandac.com",
       },
     ],
-    // progress
     [
       "reading-progress",
       {
         readingDir: ["/docs/"],
       },
     ],
-    // code copy
     ["vuepress-plugin-code-copy", true],
+    [
+      "vuepress-plugin-clean-urls",
+      {
+        normalSuffix: "",
+        indexSuffix: "/",
+        notFoundPath: "/404.html",
+      },
+    ],
+    [
+      "vuepress-plugin-medium-zoom",
+      {
+        selector: ".theme-reco-content img",
+        delay: 1000,
+        options: {
+          margin: 24,
+          background: "#ffffffe6",
+          scrollOffset: 0,
+        },
+      },
+    ],
   ],
 };

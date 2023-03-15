@@ -27,6 +27,9 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Setup Environment
+        run: echo "clientSecret=${{ secrets.CLIENT_SECRET }}" >> .env.local
+
       - name: Build
         run: npm run build
 

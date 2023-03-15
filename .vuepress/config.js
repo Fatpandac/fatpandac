@@ -1,3 +1,4 @@
+require("dotenv").config({ path: "./.env.local" });
 const moment = require("moment");
 
 module.exports = {
@@ -104,6 +105,13 @@ module.exports = {
         link: "https://epliar.com",
       },
     ],
+    vssueConfig: {
+      platform: "github",
+      owner: "Fatpandac",
+      repo: "Fatpandac",
+      clientId: "8e36e2379dcd999afc37",
+      clientSecret: process.env.clientSecret,
+    },
     logo: "/logo.png",
     search: true,
     searchMaxSuggestions: 10,

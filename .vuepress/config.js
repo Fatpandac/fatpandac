@@ -105,13 +105,6 @@ module.exports = {
         link: "https://epliar.com",
       },
     ],
-    vssueConfig: {
-      platform: "github",
-      owner: "Fatpandac",
-      repo: "Fatpandac",
-      clientId: "8e36e2379dcd999afc37",
-      clientSecret: process.env.clientSecret,
-    },
     logo: "/logo.png",
     search: true,
     searchMaxSuggestions: 10,
@@ -160,15 +153,9 @@ module.exports = {
       },
     ],
     [
-      "vuepress-plugin-medium-zoom",
+      "register-components",
       {
-        selector: ".theme-reco-content img",
-        delay: 1000,
-        options: {
-          margin: 24,
-          background: "#ffffffe6",
-          scrollOffset: 0,
-        },
+        componentsDir: ".vuepress/components",
       },
     ],
   ],

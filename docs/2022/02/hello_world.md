@@ -16,3 +16,5 @@ categories:
 之后看到了 `VuePress`,它可以实现在本地编写推送到 `GitHub` 再由 `action` 实现自动化部署到 `GitHub Pages`，这种流畅的写作方式深深的吸引了我，从而再次激起了我尝试写播客的欲望，最终在折腾了一天后，我总算把这个 Blog 给配置的有模有样了。
 
 希望能够长长久久的写下去吧！
+
+<CommentAndBack />

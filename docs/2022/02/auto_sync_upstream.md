@@ -59,3 +59,5 @@ jobs:
 在配置的第 7-8 行添加了 `env`，并判断 `secrets` 是否有设置 `target_branch`，这样就可以实现默认同步更新到 `master` 仓库如果有设置 `secrets.target_branch` 则就按设置来。  
 在第 12 行添加了一个判断用来判断当前仓库是不是 fork 仓库，使得该 Action 只有在 fork 仓库中才能正常运作。  
 这样其他人在 fork 了你的仓库后只要开启了这个 Action 则每天上午七点（北京时间）就会自动更新代码。
+
+<CommentAndBack />

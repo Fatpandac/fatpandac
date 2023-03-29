@@ -48,3 +48,5 @@ fish_add_path /opt/homebrew/opt/python@3.10/bin
 尝试一下安装 ⬇️ `rich`
 ![切换到 python3.10 后，pip 安装 rich](/images/ZPWnmdzQj1qU72c.png)
 很好 👍🏻 没有任何警 🛑
+
+<CommentAndBack />

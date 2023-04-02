@@ -34,6 +34,8 @@ categories:
 
 通过查看 Vue2 的[对应文档](https://v2.cn.vuejs.org/v2/api/index.html#productionTip)可以知道其中的 `Vue.config.productionTip` 参数配置可以阻止 vue 在启动时生成生产提示。
 
+## 问题分析
+
 但实际在 Chrome 运行上面代码的时候得到的结果并不是我们想要的，Vue 还是会输出生产提示，所以这个是什么问题呢？
 
 如果我们把这个代码放到 Safari 上面运行的话又是另一个结果了，在 Safari 上运行这一段代码可以看到 `Vue.config.productionTip = flase` 这段配置代码神奇的工作了，这又是为什么呢？
@@ -77,7 +79,13 @@ if (inBrowser) {
 
 所以在上面的生产提示代码也就被放到了最后去执行，但这样仅仅是解释了为什么在 Safari 上我们可以看到 `Vue.config.productionTip` 生效，但是在 Chrome 为什么不生效呢？
 
+## 查找原因
+
 要想弄清楚为什么在 Chrome 上没有生效我们可以通过开发者工具去查看他们的调用情况。
+
+::: tip
+为了得到一个干净的环境，屏蔽掉插件以及其他的干扰，我们可以使用无痕模式打开 preformace(Chrome)/时间线(Safari) 面板，这样就可以得到一个干净的环境了。
+:::
 
 **先看 Safari 的情况**：
 
@@ -87,15 +95,33 @@ if (inBrowser) {
 
 **然后看看 Chrome 的情况**：
 
-![Chrome 情况](/images/SCR-20230324-spms.png)
+在 Chrome 上会出现两种情况，第一种情况是在页面第一次加载的时候，还有一种情况是在刷新页面（不是强制刷新）的时候，在这两种情况只有第一种不会生效。
 
-可以看见在 Chrome 上面 `Vue.config.productionTip` 这段代码是在 `setTimeout` 回调执行之后才执行的，这也就导致了在 Chrome 上配置了 `Vue.config.productionTip = false` 也没有生效，因为在运行这一段代码之前 Vue 已经运行了输出生产提示代码，并根据对应的属性判断做出了对应的输出。
+1. 页面第一次加载的时候
 
-所以出现这个问题的原因就是因为 Chrome 和 Safari 对于 `setTimeout` 的实现不同导致的。
+![Chrome 页面第一次加载的情况](/images/SCR-20230402-tyjp.png)
 
-如果希望在 Chrome 上也能生效的话可以尝试将 `Vue.config.productionTip = false` 放到 `head` 标签里面去执行，这样就可以在 `setTimeout` 回调执行之前就已经执行了这一段代码，但是这也不是每一次都会成功的，因为 Chrome 中 `setTimeout` 的执行时机是不确定的，所以这个问题还是需要 Vue 官方去解决的。
+在第一次加载的时候 Chrome 需要请求 Vue.js 的代码，在 Vue.js 请求完成之后 Chrome 就直接运行了 Vue.js 的代码，之后在这个 task 结束之后在 Vue.js 中设置的 `setTimeout` 就被执行了，之后才是解析 HTML 代码运行里面的 `Vue.config.productionTip = false` 这段代码，所以这样就会导致在 Chrome 上面配置了 `Vue.config.productionTip = false` 没有生效。
 
-```html{9-11}
+2. 刷新页面的时候
+
+![Chrome 刷新页面的情况](/images/SCR-20230402-ucnb.png)
+
+在在刷新页面的时候 Chrome 因为之前已经获取到了 Vue.js 的代码了，所以在这一次的时候就不会再去获取 Vue.js 的代码了，而是直接从缓存中读取，所以这一次 Vue.js 的代码运行是和解析 HTML 代码是同步的，在解析 HTML 代码的时候就也执行了 `Vue.config.productionTip = false` 这段代码，所以这一次就会生效，最后在这个 task 结算之后才会执行 `setTimeout` 回调，所以在刷新页面的情况下 Chrome 上配置了 `Vue.config.productionTip = false` 是生效的。
+
+所以出现这个问题的原因就是因为 Chrome 和 Safari 对于 HTML 解析和 JS 代码执行的时机不一样，所以导致了这个问题。
+
+## 解决方案
+
+如果希望在 Chrome 中正常的运行 `Vue.config.productionTip = false` 这段代码，可以通过在 `<script>` 标签中添加 `onload` 属性来解决这个问题。
+
+`onload` 属性会在脚本加载完成之后执行，所以我们可以在 `onload` 属性中设置 `Vue.config.productionTip = false` 这段代码，这样就可以保证在 Vue.js 的代码中设置的 `setTimeout` 被执行之前就已经设置了 `Vue.config.productionTip = false` ，所以就可以保证在 Chrome 中也可以正常的运行了。
+
+使用 `onload` 属性的代码后的 Chrome preformace 面板的情况如下图所示：
+
+![Chrome 使用 onload 属性的情况](/images/SCR-20230403-boea.png)
+
+```html{8}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -103,14 +129,17 @@ if (inBrowser) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello vue!</title>
-    <script type="application/javascript" src="./js/vue.js"></script>
-    <script>
-      Vue.config.productionTip = false;
-    </script>
+    <script type="application/javascript" src="./js/vue.js" onload="Vue.config.productionTip = false"></script>
   </head>
   <body>
   </body>
 </html>
 ```
+
+## 附件 📎
+
+1. <a href="/files/chrome-vue.json" download>Chrome 第一次加载和刷新页面的 preformace 导出文件</a>
+2. <a href="/files/safari-vue.json" download>Safari 时间线的导出文件</a>
+3. <a href="/files/chrome-vue-with-onload.json" download>Chrome 使用 onload 属性的 preformace 导出文件</a>
 
 <CommentAndBack url="https://news.ycombinator.com/item?id=35351631" />

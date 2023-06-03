@@ -54,6 +54,24 @@ module.exports = {
         icon: "reco-home",
       },
       {
+        text: "实验室",
+        icon: "iconfont icon-lab",
+        items: [
+          {
+            text: "DocSearch",
+            link: "https://docsearch.fatpandac.com",
+          },
+          {
+            text: "fuckcqooc",
+            link: "https://fuckcqooc.fatpandac.com",
+          },
+          {
+            text: "hackcqooc",
+            link: "https://hackcqooc.fatpandac.com",
+          },
+        ],
+      },
+      {
         text: "时间线",
         link: "/timeline/",
         icon: "reco-date",
@@ -76,6 +94,11 @@ module.exports = {
             text: "Twitter",
             link: "https://twitter.com/Fatpandac",
             icon: "reco-twitter",
+          },
+          {
+            text: "Telegram",
+            link: "https:/t.me/fatpandac",
+            icon: "iconfont icon-telegram",
           },
           {
             text: "Email",

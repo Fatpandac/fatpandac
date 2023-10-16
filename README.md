@@ -3,3 +3,6 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Fatpandac/fatpandac/main/profile-3d-contrib/profile-green-animate.svg">
   <img alt="My GitHub Status" src="https://raw.githubusercontent.com/Fatpandac/fatpandac/main/profile-3d-contrib/profile-night-green.svg">
 </picture>
+
+[![Discord](https://img.shields.io/discord/1100683975321722980?logo=Discord&label=Fatpandac')](https://discord.com/invite/KMQBfKHzRm)
+

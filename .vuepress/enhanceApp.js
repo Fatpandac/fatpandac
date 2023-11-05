@@ -2,12 +2,12 @@ import "./public/iconfont.css";
 
 export default ({ router }) => {
   router.beforeEach((to, from, next) => {
-    if (typeof _hmt != "undefined") {
-      if (to.path) {
-        _hmt.push(["_trackPageview", to.fullPath]);
-      }
+    if (typeof replaceIcon !== "undefined") {
+      const timeout = setTimeout(() => {
+        replaceIcon();
+        clearTimeout(timeout);
+      }, 100);
     }
-
     next();
   });
 };

@@ -15,19 +15,6 @@ module.exports = {
     ["link", { rel: "icon", href: "/favicon.png" }],
     [
       "script",
-      {},
-      `
-            var _hmt = _hmt || [];
-            (function() {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?d47c012aa2838250165b44d65f898c3b";
-            var s = document.getElementsByTagName("script")[0]; 
-            s.parentNode.insertBefore(hm, s);
-            })();
-        `,
-    ],
-    [
-      "script",
       {
         async: "",
         src: "https://www.googletagmanager.com/gtag/js?id=G-10D6YDNQ9J",
@@ -43,6 +30,14 @@ module.exports = {
           
             gtag('config', 'G-10D6YDNQ9J');
             `,
+    ],
+    [
+      "script",
+      {},
+      `
+      function replaceIcon() {document.querySelector('a.home-link').innerHTML = '<div style="width:30px;height:30px;padding:5px;"><svg width="100%" height="100%" viewBox="0 0 371 310" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 244.5C33.6667 180.5 136 29 221 5.99997C233.5 1.29695 63 244.5 191.5 299C216 309.391 278.6 316 321 228C345 170 295 133 263 151C226.758 171.386 250 250 366 207" stroke="black" stroke-width="10" stroke-linecap="round"/></svg></div>'};
+      window.onload = replaceIcon
+      `,
     ],
   ],
   themeConfig: {
@@ -128,7 +123,6 @@ module.exports = {
         link: "https://epliar.com",
       },
     ],
-    logo: "/logo.png",
     search: true,
     searchMaxSuggestions: 10,
     lastUpdated: "Last Updated",

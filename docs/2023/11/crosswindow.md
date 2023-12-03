@@ -94,5 +94,5 @@ bc.onmessage = (ev) => {
 
 到目前位置我们已经可以实现 Div 的跨页面拖拽了，如果还想要更加真实的效果可以使用 [window.getScreenDetails()](https://developer.mozilla.org/en-US/docs/Web/API/Window/getScreenDetails) 来获取当前显示器的大小，并计算窗口是否挨着或是重叠。
 
-体验 <a href="/demo/crosswindow.html">Demo</a>
+查看[源码](https://github.com/Fatpandac/DemoPlayground/tree/main/packages/crosswindow)，体验 <a href="/demo/crosswindow.html">Demo</a>
 ![演示视频 GIF](/images/crosswindow.gif)

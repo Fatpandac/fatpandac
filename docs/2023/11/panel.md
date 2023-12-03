@@ -14,7 +14,7 @@ categories:
 
 经过观察这些网页的页面的组件可以知道其实最主要的实现是通过下面这个 CSS
 
-```CSS
+```css
 backdrop-filter: saturate(50%) blur(4px);
 background-image: radial-gradient(transparent 1px, #fff 1px);
 background-size: 4px 4px;
@@ -26,7 +26,7 @@ background-size: 4px 4px;
 
 具体代码如下：
 
-```Vue
+```vue
 <template>
   <div class="w-screen h-screen overflow-hidden">
     <div
@@ -40,7 +40,7 @@ background-size: 4px 4px;
         top: `${item[1]}px`,
         left: `${item[0]}px`,
         width: `${50 - index}px`,
-        height: `${50 - index}px`
+        height: `${50 - index}px`,
       }"
     ></div>
   </div>
@@ -68,5 +68,5 @@ watch([x, y], (newValue) => {
 </style>
 ```
 
-体验 <a href="/demo/panel.html">Demo</a>
+体查看[源码](https://github.com/Fatpandac/DemoPlayground/tree/main/packages/panel)，验 <a href="/demo/panel.html">Demo</a>
 ![演示视频 GIF](/images/panel.gif)

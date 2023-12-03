@@ -8,8 +8,8 @@ categories:
   - 小样
 ---
 
-前段时间 Raycast 发布了最新版本 [v1.63.0](https://www.raycast.com/changelog/1-63-0)，真这个版本的一个最重要的更新就是可以直接在 Raycast 调用摄像头并查看。
-在 Raycast 打开摄像头之前会有一个快门动画，当我看到这个这个动画的时候就立马勾起了我的好奇心，刚好 [Thomas Paul Mann](https://twitter.com/thomaspaulmann) 有发[推文](https://twitter.com/thomaspaulmann/status/1730217666663850468)介绍大致如何实现，于是我决定按图索骥实现一下。
+前段时间 Raycast 发布了最新版本 [v1.63.0](https://www.raycast.com/changelog/1-63-0)，这个版本的一个最重要的更新就是可以直接在 Raycast 调用摄像头并查看。
+在 Raycast 打开摄像头之前会有一个快门动画，当我看到这个动画的时候就立马勾起了我的好奇心，刚好 [Thomas Paul Mann](https://twitter.com/thomaspaulmann) 有发[推文](https://twitter.com/thomaspaulmann/status/1730217666663850468)介绍大致如何实现，于是我决定按图索骥实现一下。
 
 <!-- more -->
 

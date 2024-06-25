@@ -49,6 +49,11 @@ module.exports = {
         icon: "reco-home",
       },
       {
+        text: "小短文",
+        link: "https://ipfs.fatpandac.com/",
+        icon: "reco-document",
+      },
+      {
         text: "实验室",
         icon: "iconfont icon-lab",
         items: [
@@ -109,10 +114,6 @@ module.exports = {
       category: {
         location: 2,
         text: "类别",
-      },
-      tag: {
-        location: 3,
-        text: "标签",
       },
     },
     friendLink: [

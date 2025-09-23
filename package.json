@@ -4,7 +4,7 @@
   "author": "Fatpandac",
   "scripts": {
     "dev": "vuepress dev . ",
-    "build": "vuepress build .",
+    "build": "vuepress build . && node scripts/addHeaders.js",
     "prettier": "prettier --write ./docs/**/**/*.md ./.vuepress/**.js"
   },
   "description": "My blog",
@@ -24,7 +24,7 @@
     "vuepress-plugin-sitemap": "^2.3.1"
   },
   "gitHooks": {
-    "pre-commit": "node scripts/addComments.mjs && npm run prettier"
+    "pre-commit": "node scripts/addComments.js && npm run prettier"
   },
   "engines": {
     "node": "16",

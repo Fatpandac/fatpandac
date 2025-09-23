@@ -1,29 +1,33 @@
 {
-    "name": "my_blog",
-    "version": "1.0.0",
-    "author": "Fatpandac",
-    "scripts": {
-        "dev": "vuepress dev . ",
-        "build": "vuepress build .",
-        "prettier": "prettier --write ./docs/**/**/*.md ./.vuepress/**.js"
-    },
-    "description": "My blog",
-    "devDependencies": {
-        "dotenv": "^16.0.3",
-        "vuepress": "^1.9.9",
-        "vuepress-plugin-clean-urls": "^1.1.2",
-        "vuepress-plugin-code-copy": "^1.0.6",
-        "vuepress-plugin-permalink-pinyin": "^1.0.0",
-        "vuepress-theme-reco": "^1.6.17",
-        "yorkie": "^2.0.0"
-    },
-    "dependencies": {
-        "@vuepress/plugin-last-updated": "^1.9.7",
-        "moment": "^2.29.1",
-        "vuepress-plugin-reading-progress": "^1.0.10",
-        "vuepress-plugin-sitemap": "^2.3.1"
-    },
-    "gitHooks": {
-        "pre-commit": "npm run prettier"
-    }
+  "name": "my_blog",
+  "version": "1.0.0",
+  "author": "Fatpandac",
+  "scripts": {
+    "dev": "vuepress dev . ",
+    "build": "vuepress build .",
+    "prettier": "prettier --write ./docs/**/**/*.md ./.vuepress/**.js"
+  },
+  "description": "My blog",
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "vuepress": "^1.9.9",
+    "vuepress-plugin-clean-urls": "^1.1.2",
+    "vuepress-plugin-code-copy": "^1.0.6",
+    "vuepress-plugin-permalink-pinyin": "^1.0.0",
+    "vuepress-theme-reco": "^1.6.17",
+    "yorkie": "^2.0.0"
+  },
+  "dependencies": {
+    "@vuepress/plugin-last-updated": "^1.9.7",
+    "moment": "^2.29.1",
+    "vuepress-plugin-reading-progress": "^1.0.10",
+    "vuepress-plugin-sitemap": "^2.3.1"
+  },
+  "gitHooks": {
+    "pre-commit": "npm run prettier"
+  },
+  "engines": {
+    "node": "16",
+    "npm": ">=8.0.0"
+  }
 }

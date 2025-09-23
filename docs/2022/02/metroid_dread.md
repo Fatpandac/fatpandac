@@ -22,4 +22,4 @@ categories:
 更多的体验还要等到后面慢慢游玩才能发现了！！！  
 期待后面的游戏内容。
 
-<CommentAndBack />
+<GiscusComments />

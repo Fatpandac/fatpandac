@@ -64,4 +64,4 @@ categories:
    ![Deliveries 界面](/images/I9tTfKNjv2usEWZ.png)
    :::
 
-<CommentAndBack />
+<GiscusComments />

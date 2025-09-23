@@ -37,4 +37,4 @@ categories:
 
 用爱开源，让世界更美好吧！ ❤️️
 
-<CommentAndBack />
+<GiscusComments />

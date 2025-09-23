@@ -72,4 +72,4 @@ VS Code 其实并不是一款 IDE 而是一款由微软领导开发的一款跨�
 | Python |  CPython  |
 |  Java  |   javac   |
 
-<CommentAndBack url="https://news.ycombinator.com/item?id=35351655" />
+<GiscusComments />

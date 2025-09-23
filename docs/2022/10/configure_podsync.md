@@ -78,4 +78,4 @@ docker run \
 
 ![Genarate files](/images/4kwzerTX3SzN.png)
 
-<CommentAndBack />
+<GiscusComments />

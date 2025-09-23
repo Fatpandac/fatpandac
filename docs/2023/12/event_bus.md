@@ -71,3 +71,5 @@ function close() {
 
 查看[源码](https://github.com/Fatpandac/DemoPlayground/tree/main/packages/eventBus)，体验 <a href="/demo/eventBus.html">Demo</a>
 ![演示视频 GIF](/images/eventBus.gif)
+
+<GiscusComments />

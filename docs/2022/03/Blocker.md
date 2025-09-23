@@ -51,4 +51,4 @@ if __name__ == '__main__':
 
 [文件链接](https://gist.github.com/Fatpandac/61b82660e13b9f58d072938c93b3c947#file-blocker-txt)
 
-<CommentAndBack />
+<GiscusComments />

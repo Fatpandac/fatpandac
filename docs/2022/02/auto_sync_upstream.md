@@ -60,4 +60,4 @@ jobs:
 在第 12 行添加了一个判断用来判断当前仓库是不是 fork 仓库，使得该 Action 只有在 fork 仓库中才能正常运作。  
 这样其他人在 fork 了你的仓库后只要开启了这个 Action 则每天上午七点（北京时间）就会自动更新代码。
 
-<CommentAndBack />
+<GiscusComments />

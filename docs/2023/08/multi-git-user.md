@@ -47,3 +47,5 @@ git config user.signingkey <signingkey>
 ```
 
 配置完上面内容之后可以克隆项目到 `~/work` 这个文件夹下面之后进入项目使用 `git config --list` 查看刚刚的配置是否生效
+
+<GiscusComments />

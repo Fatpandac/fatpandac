@@ -24,7 +24,7 @@
     "vuepress-plugin-sitemap": "^2.3.1"
   },
   "gitHooks": {
-    "pre-commit": "npm run prettier"
+    "pre-commit": "node scripts/addComments.mjs && npm run prettier"
   },
   "engines": {
     "node": "16",

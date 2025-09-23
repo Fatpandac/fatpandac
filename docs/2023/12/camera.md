@@ -163,3 +163,5 @@ onMounted(() => {
 
 查看[源码](https://github.com/Fatpandac/DemoPlayground/tree/main/packages/camera)，体验 <a href="/demo/camera.html">Demo</a>
 ![演示视频 GIF](/images/camera.gif)
+
+<GiscusComments />

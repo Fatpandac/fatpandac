@@ -70,3 +70,5 @@ watch([x, y], (newValue) => {
 
 体查看[源码](https://github.com/Fatpandac/DemoPlayground/tree/main/packages/panel)，验 <a href="/demo/panel.html">Demo</a>
 ![演示视频 GIF](/images/panel.gif)
+
+<GiscusComments />

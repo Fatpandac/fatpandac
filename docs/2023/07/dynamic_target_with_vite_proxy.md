@@ -98,3 +98,5 @@ export default defineConfig({
 ```
 
 通过上述方法就可以实现 Vite 代理根据 URL 来动态变更 `target` 配置了
+
+<GiscusComments />

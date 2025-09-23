@@ -69,3 +69,5 @@ export function renderList(
 v-for 的实现就是上面这样了，所以对于 v-for 你可以传入数组、字符串、对象 以及 整数和小数位为零的数
 
 所以如果你需要使用 v-for 来实现多个相同的元素的话，我认为最便捷的方法是 `v-for='_ in 8'`
+
+<GiscusComments />

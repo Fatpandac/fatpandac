@@ -28,4 +28,4 @@ categories:
 
 repo: [https://github.com/Fatpandac/DocSearch](https://github.com/Fatpandac/DocSearch)
 
-<CommentAndBack />
+<GiscusComments />

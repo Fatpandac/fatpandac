@@ -118,4 +118,4 @@ jobs:
 
 通过上面的配置文件就可以实现一个自动发布会的 Action，该 Action 会在推送 `tag` 之后自动激活，并编译出相应环境下的程序，并创建一个 Release 草稿，我仅需要在 Action 运行结束后确认修改 Release 草稿内的内容发布即可。但是其中还是有点小遗憾的，因为 GitHub Action 还没有 Mac arm 的虚拟环境所以还不能自动化打包出 arm 的程序，等待 GitHub 支持 arm 的虚拟环境后，仅需要复制修改为相应的环境及可。
 
-<CommentAndBack />
+<GiscusComments />

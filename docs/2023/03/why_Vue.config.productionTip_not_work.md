@@ -142,4 +142,4 @@ if (inBrowser) {
 2. <a href="/files/safari-vue.json" download>Safari 时间线的导出文件</a>
 3. <a href="/files/chrome-vue-with-onload.json" download>Chrome 使用 onload 属性的 preformace 导出文件</a>
 
-<CommentAndBack url="https://news.ycombinator.com/item?id=35351631" />
+<GiscusComments />

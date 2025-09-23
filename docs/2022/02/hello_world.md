@@ -17,4 +17,4 @@ categories:
 
 希望能够长长久久的写下去吧！
 
-<CommentAndBack />
+<GiscusComments />

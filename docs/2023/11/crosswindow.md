@@ -96,3 +96,5 @@ bc.onmessage = (ev) => {
 
 查看[源码](https://github.com/Fatpandac/DemoPlayground/tree/main/packages/crosswindow)，体验 <a href="/demo/crosswindow.html">Demo</a>
 ![演示视频 GIF](/images/crosswindow.gif)
+
+<GiscusComments />

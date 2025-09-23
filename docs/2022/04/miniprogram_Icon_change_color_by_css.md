@@ -93,4 +93,4 @@ categories:
 }
 ```
 
-<CommentAndBack />
+<GiscusComments />

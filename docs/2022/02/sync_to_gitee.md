@@ -54,4 +54,4 @@ jobs:
           static_list: ${{ github.event.repository.name }}
 ```
 
-<CommentAndBack />
+<GiscusComments />

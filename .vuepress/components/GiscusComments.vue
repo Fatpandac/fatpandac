@@ -3,13 +3,11 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
+import { ref, onMounted } from "vue";
 
 const giscusContainer = ref(null);
 
-onMounted(() => {
-  if (giscusContainer.value.querySelector("iframe")) return;
-
+const loadGiscus = (isDark) => {
   const script = document.createElement("script");
   script.src = "https://giscus.app/client.js";
   script.async = true;
@@ -22,12 +20,30 @@ onMounted(() => {
   script.setAttribute("data-reactions-enabled", "1");
   script.setAttribute("data-emit-metadata", "0");
   script.setAttribute("data-input-position", "bottom");
-  script.setAttribute("data-theme", "preferred_color_scheme");
+  script.setAttribute("data-theme", isDark ? "dark" : "light");
   script.setAttribute("data-lang", "zh-CN");
   script.crossOrigin = "anonymous";
 
   if (giscusContainer.value) {
+    giscusContainer.value.innerHTML = "";
     giscusContainer.value.appendChild(script);
   }
+};
+
+
+onMounted(() => {
+  const box = document.querySelector("html");
+  const isDark = box.classList.contains("dark");
+  loadGiscus(isDark);
+
+  const observer = new MutationObserver((mutationsList) => {
+    for (const mutation of mutationsList) {
+      if (mutation.type === "attributes" && mutation.attributeName === "class") {
+        const isDark = box.classList.contains("dark");
+        loadGiscus(isDark);
+      }
+    }
+  })
+  observer.observe(box, { attributes: true });
 });
 </script>

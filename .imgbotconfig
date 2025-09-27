@@ -1,0 +1,5 @@
+{
+    "ignoredFiles": [
+        "/profile-3d-contrib/*", // ignore by folderpath
+    ],
+}
